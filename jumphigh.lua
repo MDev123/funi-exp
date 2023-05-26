@@ -1,0 +1,1 @@
+repeat task.wait until game.IsLoaded() local player = game.Players.LocalPlayer local character = player.Character local jumpHeight = 100 if player and character then local function adjustJumpHeight() local humanoid = character:FindFirstChildOfClass("Humanoid") if humanoid then humanoid.JumpPower = jumpHeight end end adjustJumpHeight() end
